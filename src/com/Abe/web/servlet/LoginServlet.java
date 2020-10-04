@@ -67,7 +67,7 @@ public class LoginServlet extends HttpServlet {
 
         // 6.判断是否成功
         if (loginAdmin != null) {    // 登陆成功
-            // 将用户存入session
+            // 将管理员字段存入session
             session.setAttribute("admin", loginAdmin);
             // 跳转页面
             response.sendRedirect(request.getContextPath() + "/index.jsp");
